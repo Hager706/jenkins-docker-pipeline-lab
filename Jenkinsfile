@@ -1,8 +1,8 @@
 pipeline {
     agent any
     environment {
-        DOCKER_HUB_CREDENTIALS = 'docker' // Change this to your Jenkins credentials ID
-        DOCKER_IMAGE_NAME = 'myusername/myapp' // Change this to your Docker image name
+        DOCKER_HUB_CREDENTIALS = 'docker' // Use the ID you set in Jenkins credentials
+        DOCKER_IMAGE_NAME = 'hagert/app' // Replace with your Docker Hub username and image name
     }
     stages {
         stage('Build Docker Image') {
